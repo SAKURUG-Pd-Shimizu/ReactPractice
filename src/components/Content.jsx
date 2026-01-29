@@ -1,12 +1,15 @@
+import clsx from "clsx";
+
 const Content = props => {
   // 親コンポーネントからPropsを受け取る
+  const { id, title, description, className } = props;
   return (
-    <section id={props.id} className={props.className}>
+    <section id={id} className={clsx(className)}>
       {/* Propsのプロパティを参照*/}
       <h2>
-        {props.title}
+        {title}
         <br />
-        <span>{props.description}</span>
+        <span>{description}</span>
       </h2>
     </section>
   );

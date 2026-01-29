@@ -2,7 +2,7 @@ import dockerLogo from "../assets/image/docker-mark-blue.svg";
 import reactLogo from "../assets/image/react.svg";
 import viteLogo from "../assets/image/vite.svg";
 
-import Navigation from "../components/Navigation";
+import HeaderNavigation from "../components/Navigation";
 
 const Header = () => {
   return (
@@ -19,7 +19,7 @@ const Header = () => {
         </li>
       </ul>
       <h1 className="text-6xl">Docker + React + vite</h1>
-      <Navigation />
+      <HeaderNavigation />
     </header>
   );
 };
